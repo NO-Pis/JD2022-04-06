@@ -1,4 +1,8 @@
 package by.it.piskun.jd01_01;
+
+import java.util.Locale;
+import java.util.Scanner;
+
 /*
 Ускорение свободного падения на Земле и Марсе таково:
 Марс   3.86
@@ -31,5 +35,21 @@ package by.it.piskun.jd01_01;
 
 */
 class TaskC3 {
+    public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        int letter=scanner.nextInt();
+        System.out.println(getWeight(letter));
+    }
+
+    private static double getWeight(int weight) {
+
+        double mMars;
+        mMars=(weight/9.81)*3.86;
+        mMars=mMars*100;
+        mMars=Math.round(mMars);
+        mMars=mMars/100;
+        System.out.println(mMars);
+        return mMars;
+    }
 
 }

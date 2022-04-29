@@ -65,6 +65,9 @@ class TaskC2 {
             count=10*count;
         }
         System.out.print(summ);
+        System.out.println("HEX:" + Integer.toHexString(a) + "+" + Integer.toHexString(b) + "=" + Integer.toHexString(c));
+        System.out.println("OCT:" + Integer.toOctalString(a) + "+" + Integer.toOctalString(b) + "=" + Integer.toOctalString(c));
     }
+
 
 }
